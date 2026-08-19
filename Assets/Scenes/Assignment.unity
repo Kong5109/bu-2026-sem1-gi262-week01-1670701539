@@ -462,15 +462,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assignment
   as01Number: 0
-  as02Day: 0
-  as03InputPassword: 
-  as03CorrectPassword: 
-  as04Score: 0
-  as05Year: 0
-  as06Num1: 0
-  as06Op: 0
-  as06Num2: 0
-  as07Month: 0
+  as02Day: 99
+  as03InputPassword: GG
+  as03CorrectPassword: GG
+  as04Score: 69
+  as05Year: 2000
+  as06Num1: 5
+  as06Op: 42
+  as06Num2: 6
+  as07Month: 5
   as08Quantity: 0
   as08Price: 0
   as08Payment: 0

@@ -9,9 +9,9 @@ public class Assignment : MonoBehaviour
         As02_GetDayName();
         As03_ValidatePassword();
         As04_GetGrade();
-        // As05_IsLeapYear();
-        // As06_Calculate();
-        // As07_GetSeason();
+        As05_IsLeapYear();
+        As06_Calculate();
+        As07_GetSeason();
         // As08_PurchasingSystemExample();
         // As09_RockPaperScissorsExample();
         // As10_CalculateWeaponDamage();
@@ -132,7 +132,23 @@ public class Assignment : MonoBehaviour
     {
         // TODO: Implement leap year check logic
         // Example: Debug.Log("True");
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
+        if (as05Year % 400 == 0)
+        {
+            Debug.Log("True");
+        }
+        else if (as05Year % 100 == 0)
+        {
+            Debug.Log("False");
+        }
+        else if (as05Year % 4 == 0)
+        {
+            Debug.Log("True");
+        }
+        else
+        {
+            Debug.Log("False");
+        }
     }
 
     public double as06Num1;
@@ -142,7 +158,24 @@ public class Assignment : MonoBehaviour
     {
         // TODO: Implement calculator logic
         // Example: Debug.Log("Result: 42");
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
+        switch (as06Op)
+        {
+            case '+': Debug.Log(as06Num1 + as06Num2); break;
+            case '-': Debug.Log(as06Num1 - as06Num2); break;
+            case '*': Debug.Log(as06Num1 * as06Num2); break;
+            case '/':
+                if (as06Num2 == 0)
+                {
+                    Debug.Log("Error: Cannot divide by zero");
+                }
+                else
+                {
+                    Debug.Log(as06Num1 / as06Num2); break;
+                }
+                break;
+            default: Debug.Log("Invalid operator. Please use +, -, *, /"); break;
+        }
     }
 
     public int as07Month;
@@ -150,7 +183,30 @@ public class Assignment : MonoBehaviour
     {
         // TODO: Implement logic to return season
         // Example: Debug.Log("Summer");
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
+        if (as07Month <= 12)
+        {
+            if (as07Month == 12 || as07Month == 1 || as07Month == 2)
+            {
+                Debug.Log("Winter");
+            }
+            else if (as07Month >= 3 && as07Month <= 5)
+            {
+                Debug.Log("Spring");
+            }
+            else if (as07Month >= 6 && as07Month <= 8)
+            {
+                Debug.Log("Summer");
+            }
+            else if (as07Month >= 9 && as07Month <= 11)
+            {
+                Debug.Log("Fall");
+            }
+        }
+        else
+        {
+            Debug.Log("Invalid month number. Please enter a number 1 - 12");
+        }
     }
 
     public int as08Quantity;
