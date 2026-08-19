@@ -13,9 +13,9 @@ public class Assignment : MonoBehaviour
         As06_Calculate();
         As07_GetSeason();*/
         // As08_PurchasingSystemExample();
+        // As09_RockPaperScissorsExample();
 
-        As09_RockPaperScissorsExample();
-        // As10_CalculateWeaponDamage();
+        As10_CalculateWeaponDamage();
         // As11_DeterminePlayerRank();
     }
 
@@ -285,7 +285,16 @@ public class Assignment : MonoBehaviour
     {
         // TODO: Add your implementation here
         // Example: Debug.Log("result as string");
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
+        switch (as10WeaponType)
+        {
+            case "sword": Debug.Log(((int)(as10BaseDamage * 1.3)).ToString()); break;
+            case "axe": Debug.Log(((int)(as10BaseDamage * 1.4)).ToString()); break;
+            case "bow": Debug.Log(((int)(as10BaseDamage * 1.2)).ToString()); break;
+            case "staff": Debug.Log(((int)(as10BaseDamage * 1.5)).ToString()); break;
+            case "dagger": Debug.Log(((int)(as10BaseDamage * 1.1)).ToString()); break;
+            default: Debug.Log(as10BaseDamage.ToString()); break;
+        }
     }
 
     public int as11Score;
