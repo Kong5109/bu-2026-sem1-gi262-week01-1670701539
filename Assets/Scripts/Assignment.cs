@@ -5,14 +5,15 @@ public class Assignment : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        As01_CheckNumberSign();
+        /*As01_CheckNumberSign();
         As02_GetDayName();
         As03_ValidatePassword();
         As04_GetGrade();
         As05_IsLeapYear();
         As06_Calculate();
-        As07_GetSeason();
-        // As08_PurchasingSystemExample();
+        As07_GetSeason();*/
+
+        As08_PurchasingSystemExample();
         // As09_RockPaperScissorsExample();
         // As10_CalculateWeaponDamage();
         // As11_DeterminePlayerRank();
@@ -214,7 +215,26 @@ public class Assignment : MonoBehaviour
     public int as08Payment;
     public void As08_PurchasingSystemExample()
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
+        if (as08Quantity <= 0)
+        {
+            Debug.Log("Out of stock");
+        }
+        else
+        {
+            if (as08Payment >= as08Price)
+            {
+                Debug.Log("You have received the product.");
+                if (as08Payment > as08Price)
+                {
+                    Debug.Log($"You received your change. {as08Payment - as08Price} Bath");
+                }
+            }
+            else
+            {
+                Debug.Log("You don't have enough money.");
+            }
+        }
     }
 
     public int as09UserChoice;
