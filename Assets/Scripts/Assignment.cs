@@ -12,9 +12,9 @@ public class Assignment : MonoBehaviour
         As05_IsLeapYear();
         As06_Calculate();
         As07_GetSeason();*/
+        // As08_PurchasingSystemExample();
 
-        As08_PurchasingSystemExample();
-        // As09_RockPaperScissorsExample();
+        As09_RockPaperScissorsExample();
         // As10_CalculateWeaponDamage();
         // As11_DeterminePlayerRank();
     }
@@ -241,7 +241,42 @@ public class Assignment : MonoBehaviour
     public int as09ComputerChoice;
     public void As09_RockPaperScissorsExample()
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
+        if (as09UserChoice >= 0 && as09UserChoice <= 2)
+        {
+            if (as09UserChoice == 0 && as09ComputerChoice == 1)
+            {
+                Debug.Log("You Lose");
+            }
+            else if (as09UserChoice == 0 && as09ComputerChoice == 2)
+            {
+                Debug.Log("You Win");
+            }
+            else if (as09UserChoice == 1 && as09ComputerChoice == 0)
+            {
+                Debug.Log("You Win");
+            }
+            else if (as09UserChoice == 1 && as09ComputerChoice == 2)
+            {
+                Debug.Log("You Lose");
+            }
+            else if (as09UserChoice == 2 && as09ComputerChoice == 0)
+            {
+                Debug.Log("You Lose");
+            }
+            else if (as09UserChoice == 2 && as09ComputerChoice == 1)
+            {
+                Debug.Log("You Win");
+            }
+            else
+            {
+                Debug.Log("Tie");
+            }
+        }
+        else
+        {
+            Debug.Log("Invalid number, Please Choose number 0 - 2");
+        }
     }
 
     public string as10WeaponType;

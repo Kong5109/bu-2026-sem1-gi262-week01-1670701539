@@ -472,9 +472,9 @@ MonoBehaviour:
   as06Num2: 6
   as07Month: 5
   as08Quantity: 0
-  as08Price: 0
-  as08Payment: 0
-  as09UserChoice: 0
+  as08Price: 10
+  as08Payment: 20
+  as09UserChoice: 3
   as09ComputerChoice: 0
   as10WeaponType: 
   as10BaseDamage: 0
